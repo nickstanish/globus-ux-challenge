@@ -1,0 +1,10 @@
+.DS_Store
+*.log
+
+node_modules
+
+
+# generated files
+./public/**/*.map
+./public/js/dist.js
+./public/css/styles.css

@@ -1,0 +1,90 @@
+body {
+  font-family: sans-serif;
+  letter-spacing: 1.3px;
+  font-size: 18px;
+  color: #4c4c4c;
+}
+em.bold {
+  font-style: normal;
+  font-weight: bold;
+}
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #4c4c4c;
+  color: #4c4c4c;
+  padding: 4px 8px;
+}
+button:hover,
+button:focus,
+button.active {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+button.test-button {
+  margin-right: 10px;
+}
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.highlight {
+  background-color: #e6e6e6;
+}
+.data-table {
+  border: 1px solid #d2d2d2;
+  margin: 10px 0;
+}
+.data-table .rc {
+  text-align: left;
+  width: 100%;
+  padding: 10px;
+}
+.data-table .row-wrapper > .rc {
+  display: inline-block;
+  width: auto;
+  text-indent: 15px;
+}
+@media only screen and (max-width: 768px) {
+  .row {
+    flex-wrap: wrap;
+  }
+}
+#flash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  background: #ffffff;
+}
+#flash .message {
+  width: 100%;
+  border: 1px solid #d2d2d2;
+  background-color: #d9534f;
+  color: #ffffff;
+  text-align: center;
+  padding: 5px;
+}
+#flash button.close {
+  margin: -5px 0 0 0;
+  position: absolute;
+  right: 0;
+  padding: 5px 10px;
+  border: none;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=styles.css.map*/

@@ -1,0 +1,31 @@
+{
+  "plugins": [
+    "react"
+  ],
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "env": {
+    "browser": true,
+    "commonjs": true
+  },
+  "globals": {
+    "Promise": true,
+    "Float32Array": true,
+    "Uint8Array": true,
+    "VERSION": true,
+    "Set": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": false,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "no-console": "off",
+    "no-var": "error",
+    "prefer-const": "error",
+    "no-unused-vars": ["error", {"args": "none"}]
+  }
+}

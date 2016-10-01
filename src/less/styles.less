@@ -1,0 +1,106 @@
+@white: #ffffff;
+@light-gray: #d2d2d2;
+@gray: #e6e6e6;
+@danger: #d9534f;
+
+body {
+  font-family: sans-serif;
+  letter-spacing: 1.3px;
+  font-size: 18px;
+  color: #4c4c4c;
+}
+
+em.bold {
+  font-style: normal;
+  font-weight: bold;
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+button {
+  background-color: rgba(0,0,0,0);
+  border: 1px solid #4c4c4c;
+  color: #4c4c4c;
+  padding: 4px 8px;
+
+  &:hover, &:focus, &.active {
+    background-color: rgba(0,0,0,0.2);
+  }
+
+  &.test-button {
+    margin-right: 10px;
+  }
+}
+
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.highlight {
+  background-color: @gray;
+}
+
+.data-table {
+  border: 1px solid @light-gray;
+  margin: 10px 0;
+
+  .rc {
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .row-wrapper > .rc {
+    display: inline-block;
+    width: auto;
+    text-indent: 15px;
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  .row {
+    flex-wrap: wrap;
+  }
+}
+
+#flash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  background: @white;
+
+  .message {
+    width: 100%;
+    border: 1px solid @light-gray;
+    background-color: @danger;
+    color: @white;
+    text-align: center;
+    padding: 5px;
+  }
+
+  button.close {
+    margin: -5px 0 0 0;
+    position: absolute;
+    right: 0;
+    padding: 5px 10px;
+    border: none;
+    color: @white;
+  }
+}
